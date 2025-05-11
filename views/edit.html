@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Job</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Edit Job Application</h1>
+  <form action="/update" method="POST">
+    <input type="hidden" name="id" value="{{id}}">
+
+    <label>Company:</label><br>
+    <input type="text" name="company" value="{{company}}" required><br>
+
+    <label>Position:</label><br>
+    <input type="text" name="position" value="{{position}}" required><br>
+
+    <label>Date Applied:</label><br>
+    <input type="date" name="date_applied" value="{{date_applied}}"><br>
+
+    <label>Status:</label><br>
+    <input type="text" name="status" value="{{status}}"><br>
+
+    <label>Notes:</label><br>
+    <textarea name="notes" rows="4">{{notes}}</textarea><br>
+
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>
